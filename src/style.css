@@ -1,0 +1,5 @@
+@font-face { font-family: Bureau; src: url('Bureau\ Grotesk\ FB\ One\ Five\ Regular.otf'); } 
+@font-face { font-family: Founders; src: url('Test\ Founders\ Grotesk\ 400.otf'); } 
+h1{
+    font-family: Bureau, sans-serif;
+}
