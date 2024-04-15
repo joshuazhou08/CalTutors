@@ -1,5 +1,159 @@
 @font-face { font-family: Bureau; src: url('Bureau\ Grotesk\ FB\ One\ Five\ Regular.otf'); } 
 @font-face { font-family: Founders; src: url('Test\ Founders\ Grotesk\ 400.otf'); } 
-h1{
-    font-family: Bureau, sans-serif;
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  overflow-x: hidden;
+  
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+  font-family: Founders, sans-serif;
+  margin: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*End of Reset*/
+
+body {
+  color: #232323;
+}
+nav{
+    color: inherit;
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    gap: 1vw;
+    padding-left: 30px;
+    align-items: center;
+    font-size: calc(6px + 0.8vw)
+}
+nav > ul{
+    padding-left: 0px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+
+}
+li, nav > p {
+    padding: 10px 1vw;
+}
+
+nav > p {
+  font-weight: 550;
+  font-size: calc(3px + 1vw);
+  margin-left: auto;
+}
+
+nav > div {
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    gap: 20px;
+}
+nav > div> button, #get-started {
+    padding: 10px 20px;
+    background-color: rgb(159, 193, 245);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(159, 193, 245);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+#contact {
+  background-color: rgb(233, 233, 233);
+  border-color: rgb(233, 233, 233);
+}
+
+
+#hero > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 150px;
+  padding-top: 50px;
+}
+
+#hero > div > :not(button){
+  font-weight: inherit;
+  width: 450px;
+  font-family: Bureau, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 48px;
+}
+
+#hero > div > p {
+  font-size: 18px;
+  font-family: Founders, serif
 }
