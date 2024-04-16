@@ -82,6 +82,9 @@ textarea:not([rows]) {
 
 body {
   color: #232323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 nav{
     color: inherit;
@@ -92,6 +95,7 @@ nav{
     width: 100vw;
     gap: 1vw;
     padding-left: 30px;
+    justify-content: space-between;
     align-items: center;
     font-size: calc(6px + 0.8vw)
 }
@@ -113,10 +117,10 @@ nav > p {
 }
 
 nav > div {
-    margin-left: auto;
     margin-right: 30px;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 nav > div> button, #get-started {
     padding: 10px 20px;
@@ -138,14 +142,20 @@ a{
 #hero > div {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+#hero > div > .wrapper {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 30px;
+  border-radius: 30px;
   gap: 20px;
-  padding-left: 150px;
-  padding-top: 50px;
+  margin-top: 50px;
+  margin-right: 400px;
+  background-color: rgba(255, 255, 255, 0.747);
 }
 
-#hero > div > :not(button){
+#hero > div > .wrapper > :not(button){
   font-weight: inherit;
   width: 450px;
   font-family: Bureau, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -153,7 +163,11 @@ a{
   font-size: 48px;
 }
 
-#hero > div > p {
+#hero > div > .wrapper> p {
   font-size: 18px;
   font-family: Founders, serif
+}
+
+#hero > div > .wrapper > button {
+  align-self: flex-start;
 }
