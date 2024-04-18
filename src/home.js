@@ -1,16 +1,18 @@
-import Hero from './Images/Hero.png'
-
+import Hero from './Images/Hero Girl.png'
+import Sunrise from './Images/Sunrise.png'
 function createHomePage(){
 
     const heroSection = document.querySelector('#hero')
 
     //Hero
     const hero = document.createElement('div');
-    hero.style.backgroundImage = `url(${Hero})`;  
-    hero.style.height = '600px';
-    hero.style.width = '1600px';
+    hero.style.backgroundImage = `url(${Sunrise})`;  
+    hero.style.height = '550px';
+    hero.style.width = '100vw';
     hero.style.backgroundSize = 'cover'
     hero.style.backgroundPosition = 'bottom'
+    hero.style.display = 'flex'
+    hero.classList.add = 'centered'
 
     heroSection.appendChild(hero)
 
@@ -35,6 +37,12 @@ function createHomePage(){
 
     textWrapper.appendChild(startBtn)
 
+    //hero girl
+    const heroGirl = document.createElement('img')
+    heroGirl.src = Hero
+    heroGirl.style.width = '320px'
+    heroGirl.style.alignSelf = 'flex-end'
+    hero.appendChild(heroGirl)
 
 }
 export {createHomePage}
