@@ -2,6 +2,7 @@
   max-width: 100vw;
 }
 
+
 .centered{
   display: flex;
   justify-content: center;
@@ -75,4 +76,15 @@ ul{
   align-self: flex-start;
   padding: 12px 50px;
   font-size: 20px;
+}
+
+#subjects {
+  width: 100vw;
+  padding: 10px 0;
+  gap: 10px;
+  justify-content: center;
+}
+
+#subjects > li {
+  background-color: white;
 }
