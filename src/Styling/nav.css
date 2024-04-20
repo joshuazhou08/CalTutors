@@ -15,18 +15,12 @@ body {
       align-items: center;
       font-size: calc(6px + 0.8vw)
   }
-  nav > ul{
-      padding-left: 0px;
-      list-style: none;
-      display:flex;
-      justify-content: space-between;
-  
-  }
+
   li, nav > p {
       padding: 10px 1vw;
   }
   
-  nav > p {
+  #number {
     font-weight: 550;
     font-size: calc(3px + 1vw);
     margin-left: auto;

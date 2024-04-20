@@ -1,0 +1,8 @@
+#section{
+    padding: 0 10vw;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
