@@ -7,7 +7,8 @@ function createHomePage(){
     //Hero
     const hero = document.createElement('div');
     hero.style.backgroundImage = `url(${Sunrise})`;  
-    hero.style.height = '550px';
+    hero.style.minHeight = '550px';
+    hero.style.padding = '30px'
     hero.style.width = '100vw';
     hero.style.backgroundSize = 'cover'
     hero.style.backgroundPosition = 'bottom'
