@@ -3,11 +3,9 @@ import './Styling/section.css'
 
 const main = document.querySelector('main')
 
-function createSection(imageURL, headingText, bodyText, flipped = false){
-    const section = document.createElement('section')
+function createSection(section, imageURL, headingText, bodyText, width = '400px', height = 'auto',flipped = false){
     section.style.margin = 'calc(24px + 0.5vw)'
-    section.id = "section"
-    main.appendChild(section)
+    section.classList.add('section')
 
     const textWrapper = document.createElement('div')
     textWrapper.classList.add('wrapper')
@@ -19,6 +17,7 @@ function createSection(imageURL, headingText, bodyText, flipped = false){
     heading.style.fontFamily = "FoundersBold, serif"
     heading.style.fontWeight = '1000'
     heading.style.letterSpacing = '0.01px'
+    heading.style.color = 'rgba(19, 31, 48, 1)'
     textWrapper.appendChild(heading)
 
     const body = document.createElement('p')
@@ -31,7 +30,8 @@ function createSection(imageURL, headingText, bodyText, flipped = false){
 
     const img = document.createElement('img')
     img.src = imageURL
-    img.style.width= '500px';
+    img.style.width = width
+    img.style.height = height
     section.appendChild(img)
 
     if (flipped) {

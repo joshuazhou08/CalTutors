@@ -1,4 +1,4 @@
-import Hero from './Images/Hero Girl.png'
+import Hero from './Images/Hero.png'
 import Sunrise from './Images/Sunrise.png'
 function createHomePage(){
 
@@ -8,7 +8,6 @@ function createHomePage(){
     const hero = document.createElement('div');
     hero.style.backgroundImage = `url(${Sunrise})`;  
     hero.style.minHeight = '550px';
-    hero.style.padding = '30px'
     hero.style.width = '100vw';
     hero.style.backgroundSize = 'cover'
     hero.style.backgroundPosition = 'bottom'
@@ -27,7 +26,10 @@ function createHomePage(){
     textWrapper.appendChild(heroText)
 
     const heroSubText = document.createElement('p')
-    heroSubText.textContent = "Our tutoring will prepare your child to ace their next STEM exam. Schedule your first lesson today and together, lets help your child shine."
+    heroSubText.textContent = `I will help prepare your child to ace their next exam. 
+    Schedule your first lesson today and together, lets help your child shine.`
+
+    heroSubText.style.fontSize = '18px'
 
     textWrapper.appendChild(heroSubText)
 
@@ -37,7 +39,7 @@ function createHomePage(){
 
     textWrapper.appendChild(startBtn)
 
-    //hero girl
+    //hero 
     const heroGirl = document.createElement('img')
     heroGirl.src = Hero
     heroGirl.style.width = '320px'

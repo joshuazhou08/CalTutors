@@ -33,6 +33,7 @@ ul{
   list-style: none;
   display:flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 
@@ -46,9 +47,19 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center ;
-  gap: 4vw;
+  gap: 8vw;
   flex-wrap: wrap-reverse;
 }
+
+#hero .wrapper{
+  transition: all 0.3s ease;
+}
+
+#hero .wrapper:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.05, 1.05);
+}
+
 #hero > div > .wrapper {
   display: flex;
   flex-direction: column;
@@ -78,13 +89,33 @@ ul{
   font-size: 20px;
 }
 
+#hero img{
+  transition: all 0.3s ease;
+}
+
+#hero img:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.05, 1.05);
+  margin-bottom: 10px;
+}
+
 #subjects {
   width: 100vw;
   padding: 10px 0;
   gap: 10px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #subjects > li {
   background-color: white;
+}
+
+button{
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  transition: all 0.3s ease-in;
+  filter: brightness(0.9)
 }
