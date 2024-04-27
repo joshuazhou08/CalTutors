@@ -17,6 +17,7 @@ function createHomePage(){
 
     const textWrapper = document.createElement('div')
     textWrapper.classList.add('wrapper')
+    textWrapper.classList.add('animatedHover')
 
     hero.appendChild(textWrapper)
 
@@ -36,6 +37,7 @@ function createHomePage(){
     const startBtn = document.createElement('button')
     startBtn.textContent = "Get Started"
     startBtn.id = "get-started"
+    startBtn.classList.add('animatedHover')
 
     textWrapper.appendChild(startBtn)
 
@@ -44,6 +46,7 @@ function createHomePage(){
     heroGirl.src = Hero
     heroGirl.style.width = '320px'
     heroGirl.style.alignSelf = 'flex-start'
+    heroGirl.classList.add('animatedHover')
     hero.appendChild(heroGirl)
 
 }

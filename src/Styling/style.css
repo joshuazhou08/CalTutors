@@ -6,6 +6,34 @@
   max-width: 100vw;
 }
 
+.alignLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 880px;
+  padding-left: 10px;
+}
+
+.flex{
+  display: flex;
+}
+
+.verticalFlex{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Font stuff */
+.foundersH{
+  font-family: FoundersBold, sans-serif;
+  font-weight: 800;
+  color: rgba(19, 31, 48, 1);
+}
+
+.smallerH{
+  font-size: 42px;
+}
 
 .centered{
   display: flex;
@@ -55,13 +83,13 @@ ul{
   flex-wrap: wrap-reverse;
 }
 
-#hero .wrapper{
-  transition: all 0.3s ease;
+.animatedHover{
+  transition: all 0.3s ease
 }
 
-#hero .wrapper:hover {
+.animatedHover:hover{
   transition: all 0.3s ease;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.05,1.05)
 }
 
 #hero > div > .wrapper {
@@ -93,15 +121,6 @@ ul{
   font-size: 20px;
 }
 
-#hero img{
-  transition: all 0.3s ease;
-}
-
-#hero img:hover {
-  transition: all 0.3s ease;
-  transform: scale(1.05, 1.05);
-  margin-bottom: 10px;
-}
 
 #subjects {
   width: 100vw;
@@ -114,16 +133,6 @@ ul{
 #subjects > li {
   background-color: white;
 }
-
-button{
-  transition: all 0.3s ease;
-}
-
-button:hover{
-  transition: all 0.3s ease-in;
-  filter: brightness(0.9)
-}
-
 
 .emphasis {
   color: var(--lightblue);
@@ -147,10 +156,7 @@ video {
   margin-top: 75px;
   color: white;
   width: 880px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  min-height: 300px;
 }
 
 #video > :not(video) {

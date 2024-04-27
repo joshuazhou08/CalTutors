@@ -16,14 +16,6 @@
     object-fit: cover;
 }
 
-.section img, .section .wrapper{
-    transition: all 0.3s ease;
-  }
-  
-.section img:hover, .section .wrapper:hover {
-    transition: all 0.3s ease;
-    transform: scale(1.05, 1.05);
-}
 
 .section .wrapper{
     width: 45%;

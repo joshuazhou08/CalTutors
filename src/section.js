@@ -9,14 +9,12 @@ function createSection(section, imageURL, headingText, bodyText, width = '400px'
 
     const textWrapper = document.createElement('div')
     textWrapper.classList.add('wrapper')
+    textWrapper.classList.add('animatedHover')
     section.appendChild(textWrapper)
 
     const heading = document.createElement('h1')
     heading.innerHTML = headingText
-    heading.style.fontFamily = "FoundersBold, serif"
-    heading.style.fontWeight = '1000'
-    heading.style.letterSpacing = '0.01px'
-    heading.style.color = 'rgba(19, 31, 48, 1)'
+    heading.classList.add('foundersH')
     textWrapper.appendChild(heading)
 
     const body = document.createElement('p')
@@ -32,6 +30,7 @@ function createSection(section, imageURL, headingText, bodyText, width = '400px'
     img.style.width = width
     img.style.height = height
     img.style.borderRadius = "15px"
+    img.classList.add('animatedHover')
     section.appendChild(img)
 
     if (flipped) {
