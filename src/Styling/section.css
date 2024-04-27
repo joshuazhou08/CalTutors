@@ -1,11 +1,19 @@
 .section{
-    padding: 0 10vw;
-    max-width: 1600px;
+    padding: 10px 10vw;
+    max-width: 1800px;
     display: flex;
     justify-content: center;
     gap: 100px;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.section .bodyText{
+    font-size: 18px;
+}
+
+.section img {
+    object-fit: cover;
 }
 
 .section img, .section .wrapper{
@@ -15,4 +23,8 @@
 .section img:hover, .section .wrapper:hover {
     transition: all 0.3s ease;
     transform: scale(1.05, 1.05);
+}
+
+.section .wrapper{
+    width: 45%;
 }
