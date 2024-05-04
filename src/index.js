@@ -1,4 +1,3 @@
-
 import './Styling/reset.css'
 import './Styling/style.css'
 import './Styling/nav.css'
@@ -6,7 +5,7 @@ import './Styling/footer.css'
 import './section.js'
 import Cartoon1 from './Images/Cartoon1.png'
 import Logo from './Images/Logo Words.png'
-import LogoImg from './Images/Logo.png'
+import MenuIcon from './Images/Menu.png'
 import Spirit from './Images/Spirit.jpg'
 import {createSection} from './section.js'
 import {createHomePage} from './home.js'
@@ -15,9 +14,21 @@ import BookBackground from './Images/BookBackground.png'
 import TikTok from './Images/TikTok.png'
 import './review.js'
 
+
+//NavBar stuff
+
+const menuButton = document.querySelector('#menu-button')
+menuButton.src = MenuIcon
+
 const logo = document.querySelector('#Logo')
 logo.src = Logo
 
+const navMenu = document.querySelector('#slim-nav')
+
+menuButton.addEventListener('click', ()=>{
+    navMenu.classList.toggle('hidden')
+    navMenu.classList.toggle('active')
+})
 
 createHomePage();
 
@@ -28,7 +39,7 @@ a lack of understanding of the fundamental 'whys' and 'hows' of math and science
 formulas only works for so long. With my lessons, I ensure you that your child will have a strong
 grasp of the fundamentals to unlock their full potential.`
 
-createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, handPickedTutors, '400px','275px')
+createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, handPickedTutors, '40%','auto')
 
 const sohrabHeading = `Your <span class = "emphasis"> Reading </span> And <span class = "emphasis"> Writing </span> Tutor: Sohrab`
 
@@ -36,7 +47,7 @@ const sohrabPhilosophy = `I want to foster an environment for students to learn 
 goals and skills. I believe bridging the gap between academic learning in school and more engaging practices focused to each specific 
 student is key to success in the classroom. `
 
-createSection(document.querySelector('#section2'), Sohrab, sohrabHeading, sohrabPhilosophy, '400px','275px', true)
+createSection(document.querySelector('#section2'), Sohrab, sohrabHeading, sohrabPhilosophy, '40%','auto', true)
 
 
 const satisfactionHeading = `First 30 Minutes Free <span class = "emphasis"> #TeamSpirit </span>`
@@ -46,7 +57,7 @@ child to learn while also having fun. Sit back, relax, and watch your child shin
 <span class = "emphasis">#TeamSpirit</span>`
 
 
-createSection(document.querySelector('#section3'), Spirit, satisfactionHeading, satisfaction, '400px', '275px')
+createSection(document.querySelector('#section3'), Spirit, satisfactionHeading, satisfaction, '40%', 'auto')
 
 
 /*Book Free Section*/
