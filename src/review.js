@@ -6,6 +6,7 @@ let reviewNum = 0
 function addReview (stars, name, position, review, number=reviewNum){
     const wrapper = document.querySelector('#testWrapper')
     const reviewBody = document.createElement('div') 
+    reviewBody.classList.add('animatedHover')
 
     reviewBody.id = `review-${number}`
     wrapper.appendChild(reviewBody)
@@ -40,5 +41,5 @@ theories involved in solving a problem so I would be able to understand the topi
 highly recommend working with Josh.`
 
 addReview('5', 'Syona Dalal', 'student', Syona)
-addReview('5', 'Justine Ruedas', 'student', Justine)
 addReview('5', 'Isabella Maria', 'student', IsabellaMaria)
+addReview('5', 'Justine Ruedas', 'student', Justine)

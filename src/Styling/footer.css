@@ -1,0 +1,65 @@
+footer {
+    padding: 60px;
+    background-color: rgb(21, 22, 24);
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+
+}
+footer h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    font-size: 30px;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+footer li {
+    font-weight: 400;
+    padding: 0 18px;
+    font-size: 16px;
+    color: rgb(156, 156, 156);
+}
+
+footer a:hover {
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: rgb(214, 214, 214);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 48px;
+    font-size: 14px;
+}
+
+footer svg {
+    fill: white;
+    cursor: pointer;
+}
+
+#social-icons li {
+    padding: 0;
+}
+
+#social-icons {
+    margin: 40px;
+    gap: 16px;
+}
+
+footer a {
+    margin: 0; 
+    padding: 0;
+}
+#TikTok {
+    width: 40px;
+    cursor: pointer;
+}

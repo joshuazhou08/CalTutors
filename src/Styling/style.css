@@ -60,7 +60,7 @@ p {
   font-size: 20px;
 }
 
-ul{
+section ul, nav ul{
   padding-left: 0px;
   list-style: none;
   display:flex;
@@ -73,6 +73,10 @@ ul{
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#hero {
+  overflow-y: hidden;
 }
 
 #hero > div {
@@ -176,4 +180,36 @@ video {
   background-color: var(--lightblue);
   color: black;
   padding: 2px 2px;
+}
+/*For Booking Free Schedule */
+
+#bookFree {
+  min-height: 400px;
+  width: 100vw;
+  background-size: cover;
+  justify-content: flex-start;
+  padding-top: 100px;
+  gap: 10px;
+}
+
+#bookFree * {
+  margin: 0;
+  padding: 0;
+}
+
+#schedule {
+
+  padding: 12px;
+  border-radius: 5px;
+  transition: ease 1s;
+  cursor: pointer;
+  border: 1px solid gray;
+  background-color: white;
+  font-size: 18px;
+}
+
+#schedule:hover{
+  transition: ease 1s;
+  background-color: transparent;
+  border-color: white;
 }

@@ -57,7 +57,7 @@ a{
     transition: all 0.3s ease;
 }
 
-a:hover {
+nav a:hover {
     transition: all 0.3s ease;
     font-size: 20px;
     color: rgb(42, 59, 71);
@@ -69,3 +69,5 @@ a:hover {
     background-color: rgb(233, 233, 233);
     border-color: rgb(233, 233, 233);
 }
+
+/*For Mobile*/

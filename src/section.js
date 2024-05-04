@@ -4,7 +4,7 @@ import './Styling/section.css'
 const main = document.querySelector('main')
 
 function createSection(section, imageURL, headingText, bodyText, width = '400px', height = 'auto',flipped = false){
-    section.style.margin = 'calc(24px + 0.5vw)'
+    section.style.margin = '24px'
     section.classList.add('section')
 
     const textWrapper = document.createElement('div')
