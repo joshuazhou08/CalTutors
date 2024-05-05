@@ -54,6 +54,7 @@ nav > div> button, #get-started {
     border-style: solid;
     border-color: rgb(159, 193, 245);
     cursor: pointer;
+    width: 125px;
 }
 
 nav > ul > li {
@@ -137,6 +138,9 @@ a{
         background-color: #dddddd;
     }
 
-
+    #embark{
+        font-size: 16px;
+        padding: 10px 10px
+    }
     
   }

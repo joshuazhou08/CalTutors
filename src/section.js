@@ -3,7 +3,7 @@ import './Styling/section.css'
 
 const main = document.querySelector('main')
 
-function createSection(section, imageURL, headingText, bodyText, width = '400px', height = 'auto',flipped = false){
+function createSection(section, imageURL, headingText, bodyText, flipped = false){
     section.style.margin = '24px'
     section.classList.add('section')
 
@@ -27,8 +27,6 @@ function createSection(section, imageURL, headingText, bodyText, width = '400px'
 
     const img = document.createElement('img')
     img.src = imageURL
-    img.style.width = width
-    img.style.height = height
     img.style.borderRadius = "15px"
     img.classList.add('animatedHover')
     section.appendChild(img)

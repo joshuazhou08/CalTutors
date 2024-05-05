@@ -12,7 +12,9 @@ import {createHomePage} from './home.js'
 import Sohrab from './Images/Sohrab.png'
 import BookBackground from './Images/BookBackground.png'
 import TikTok from './Images/TikTok.png'
+import arrow from './Images/arrow.jpeg'
 import './review.js'
+
 
 
 //NavBar stuff
@@ -30,8 +32,18 @@ menuButton.addEventListener('click', ()=>{
     navMenu.classList.toggle('active')
 })
 
+const embarkButton = document.querySelector('#embark')
+
+embarkButton.addEventListener('click', ()=>{
+    document.querySelector('#bookFree').scrollIntoView(false, {behavior: "smooth"});
+})
+
+//Hero Section
+
 createHomePage();
 
+
+//About section
 const handPickedHeading = `Your <span class = "emphasis">STEM </span> Tutor: Joshua`
 
 const handPickedTutors = `My focus is on the <span class = "emphasis">Fundamentals</span>. During my time in school, I've realized most students struggle in classes due to 
@@ -39,7 +51,7 @@ a lack of understanding of the fundamental 'whys' and 'hows' of math and science
 formulas only works for so long. With my lessons, I ensure you that your child will have a strong
 grasp of the fundamentals to unlock their full potential.`
 
-createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, handPickedTutors, '40%','auto')
+createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, handPickedTutors,)
 
 const sohrabHeading = `Your <span class = "emphasis"> Reading </span> And <span class = "emphasis"> Writing </span> Tutor: Sohrab`
 
@@ -47,7 +59,7 @@ const sohrabPhilosophy = `I want to foster an environment for students to learn 
 goals and skills. I believe bridging the gap between academic learning in school and more engaging practices focused to each specific 
 student is key to success in the classroom. `
 
-createSection(document.querySelector('#section2'), Sohrab, sohrabHeading, sohrabPhilosophy, '40%','auto', true)
+createSection(document.querySelector('#section2'), Sohrab, sohrabHeading, sohrabPhilosophy, true)
 
 
 const satisfactionHeading = `First 30 Minutes Free <span class = "emphasis"> #TeamSpirit </span>`
@@ -57,8 +69,23 @@ child to learn while also having fun. Sit back, relax, and watch your child shin
 <span class = "emphasis">#TeamSpirit</span>`
 
 
-createSection(document.querySelector('#section3'), Spirit, satisfactionHeading, satisfaction, '40%', 'auto')
+createSection(document.querySelector('#section3'), Spirit, satisfactionHeading, satisfaction)
 
+//Review section scroll code
+const scrollLeftBtn = document.querySelector('.scroll-left')
+const scrollRightBtn = document.querySelector('.scroll-right')
+const testimonials = document.querySelector('#testWrapper')
+
+scrollLeftBtn.src = arrow
+scrollRightBtn.src = arrow
+
+scrollLeftBtn.addEventListener('click', ()=>{
+    testimonials.scrollLeft -= 450
+})
+
+scrollRightBtn.addEventListener('click', ()=>{
+    testimonials.scrollLeft += 450
+})
 
 /*Book Free Section*/
 document.querySelector('#bookFree').style.backgroundImage = `url(${BookBackground})`

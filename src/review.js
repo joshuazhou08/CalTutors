@@ -12,7 +12,7 @@ function addReview (stars, name, position, review, number=reviewNum){
     wrapper.appendChild(reviewBody)
 
     const starsImg = document.createElement('img')
-    starsImg.src = five
+    starsImg.src = stars
     starsImg.style.width = '100px'
     reviewBody.appendChild(starsImg)
 
@@ -39,7 +39,11 @@ const Justine = `Great tutor very patient.`
 const IsabellaMaria = `Josh was a super helpful tutor! He is very patient and focuses on the foundational 
 theories involved in solving a problem so I would be able to understand the topic better as a whole. I 
 highly recommend working with Josh.`
+const Jacob = `JZ is a great tutor who takes the time to explain every step intricately when solving problem. 
+He listens to what you say and explains what your problems are and is very flexible overall. I would 
+definitely recommend JZ to anybody who needs help in math.`
 
-addReview('5', 'Syona Dalal', 'student', Syona)
-addReview('5', 'Isabella Maria', 'student', IsabellaMaria)
-addReview('5', 'Justine Ruedas', 'student', Justine)
+addReview(five, 'Syona Dalal', 'student', Syona)
+addReview(five, 'Isabella Maria', 'student', IsabellaMaria)
+addReview(five, 'Justine Ruedas', 'student', Justine)
+addReview(five, 'Jacob Shabanie', 'student', Jacob)

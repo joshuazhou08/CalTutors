@@ -14,8 +14,7 @@
 
 .section img {
     object-fit: cover;
-    min-height: 250px;
-    min-width: 350px;
+    width: 40%;
 }
 
 
@@ -24,3 +23,14 @@
     min-width: 450px;
 }
 
+@media only screen and (max-width: 990px){
+    .section{
+        gap: 10px;
+    }
+    .section .wrapper, .section img{
+        width: 90vw;
+        min-width: 0;
+    }
+
+  
+  }
