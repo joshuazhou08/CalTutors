@@ -4,40 +4,18 @@ import '../Styling/nav.css'
 import '../Styling/footer.css'
 import './section.js'
 import Cartoon1 from './Images/Cartoon1.png'
-import Logo from './Images/Logo Words.png'
-import MenuIcon from './Images/Menu.png'
 import Spirit from './Images/Spirit.jpg'
 import {createSection} from './section.js'
 import {createHomePage} from './home.js'
 import Sohrab from './Images/Sohrab.png'
-import BookBackground from './Images/BookBackground.png'
-import TikTok from './Images/TikTok.png'
-import arrow from './Images/arrow.jpeg'
 import Video from '../Videos/tutoring.mp4'
+import arrow from './Images/arrow.jpeg'
+import BookBackground from './Images/BookBackground.png'
 import './review.js'
+import './nav_footer.js'
 
 
 
-//NavBar stuff
-
-const menuButton = document.querySelector('#menu-button')
-menuButton.src = MenuIcon
-
-const logo = document.querySelector('#Logo')
-logo.src = Logo
-
-const navMenu = document.querySelector('#slim-nav')
-
-menuButton.addEventListener('click', ()=>{
-    navMenu.classList.toggle('hidden')
-    navMenu.classList.toggle('active')
-})
-
-const embarkButton = document.querySelector('#embark')
-
-embarkButton.addEventListener('click', ()=>{
-    document.querySelector('#bookFree').scrollIntoView(false, {behavior: "smooth"});
-})
 
 //Hero Section
 
@@ -94,33 +72,6 @@ scrollRightBtn.addEventListener('click', ()=>{
 document.querySelector('#bookFree').style.backgroundImage = `url(${BookBackground})`
 const scheduleNow = document.querySelector("#schedule")
 scheduleNow.addEventListener('click', ()=>{
-    window.open('https://calendly.com/joshuazhou/30min')
+    window.open('https://calendly.com/luminoustutor/30min')
 })
 
-/*
-const footerImage = document.querySelector('footer img')
-footerImage.src = LogoImg
-footerImage.style.width = '200px'
-footerImage.style.filter = 'brightness(0.5)' */
-
-
-/*Footer stuff*/
-document.querySelector('#TikTok').src = TikTok
-
-const Instagram = document.querySelector('#social-icons li:nth-child(1) svg')
-
-Instagram.addEventListener('click', () =>{
-    window.open('https://www.instagram.com/joshuatutoring/')
-})
-
-const GMAIL = document.querySelector('#social-icons li:nth-child(2)>svg')
-GMAIL.addEventListener('click', () =>{
-    window.open('mailto:joshuazhou@berkeley.edu?')
-})
-
-
-const Tiktok = document.querySelector('#TikTok')
-
-Tiktok.addEventListener('click', () =>{
-    window.open('https://www.tiktok.com/@joshuatutoring')
-})

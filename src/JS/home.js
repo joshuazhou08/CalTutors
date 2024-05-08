@@ -27,8 +27,8 @@ function createHomePage(){
     textWrapper.appendChild(heroText)
 
     const heroSubText = document.createElement('p')
-    heroSubText.textContent = `I will help prepare your child to ace their next exam. 
-    Schedule your first lesson today and together, lets help your child shine.`
+    heroSubText.textContent = `We will prepare you to ace their next exam. 
+    Schedule your free first lesson today and together, lets shine.`
 
     heroSubText.style.fontSize = '18px'
 
@@ -38,6 +38,9 @@ function createHomePage(){
     startBtn.textContent = "Get Started"
     startBtn.id = "get-started"
     startBtn.classList.add('animatedHover')
+    startBtn.addEventListener('click', () => {
+        document.querySelector('#bookFree').scrollIntoView(false, {behavior: "smooth"});
+    })
 
     textWrapper.appendChild(startBtn)
 
