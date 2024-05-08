@@ -5,13 +5,24 @@ const path = require('path');
 
  module.exports = {
    entry: {
-     app: './src/index.js',
+     main: './src/JS/index.js',
    },
    plugins: [
      new HtmlWebpackPlugin({
        title: 'Production',
-       template: './src/index.html'
+       filename: 'index.html',
+       template: './src/index.html',
+       chunks: ['main']
      }),
+  
+     new HtmlWebpackPlugin({
+      title: 'About',
+      filename: 'about.html',
+      template: './src/about.html',
+      chunks: ['main']
+     })
+     
+
    ],
    output: {
      filename: 'bundle.js',
