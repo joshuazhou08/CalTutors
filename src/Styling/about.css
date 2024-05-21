@@ -1,0 +1,28 @@
+#hero {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 5%;
+}
+
+#about-hero{
+    width: 40%;
+}
+
+#hero > .text-wrapper{
+    margin-bottom: 50px;
+    width: 35%;
+}
+
+@media only screen and (max-width: 990px){
+    #about-hero{
+        width: 80%;
+        margin-right: 0;
+    }
+    
+    #hero > .text-wrapper{
+        width: 80%;
+    }
+  
+  }

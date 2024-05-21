@@ -1,5 +1,6 @@
 import Hero from './Images/Hero.png'
 import Sunrise from './Images/Sunrise.png'
+import '../Styling/home.css'
 function createHomePage(){
 
     const heroSection = document.querySelector('#hero')
