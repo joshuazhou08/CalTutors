@@ -242,10 +242,15 @@ video {
 
   #hero > div >.wrapper {
     margin: 10px;
+    display: grid;
     gap: 0;
   }
   #hero > div > .wrapper > :not(button){
     width: 80vw;
+  }
+
+  #hero > div > .wrapper > button{
+    justify-self: center
   }
 
 }

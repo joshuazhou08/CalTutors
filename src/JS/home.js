@@ -27,7 +27,7 @@ function createHomePage(){
     textWrapper.appendChild(heroText)
 
     const heroSubText = document.createElement('p')
-    heroSubText.textContent = `We will prepare you to ace their next exam. 
+    heroSubText.textContent = `Unlock your potential one lesson at a time. 
     Schedule your free first lesson today and together, lets shine.`
 
     heroSubText.style.fontSize = '18px'

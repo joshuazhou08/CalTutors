@@ -6,6 +6,7 @@ const path = require('path');
  module.exports = {
    entry: {
      main: './src/JS/index.js',
+     about: './src/JS/about.js'
    },
    plugins: [
      new HtmlWebpackPlugin({
@@ -19,13 +20,13 @@ const path = require('path');
       title: 'About',
       filename: 'about.html',
       template: './src/about.html',
-      chunks: ['main']
+      chunks: ['about']
      })
      
 
    ],
    output: {
-     filename: 'bundle.js',
+     filename: "[name].js",
      path: path.resolve(__dirname, 'dist'),
      clean: true,
    },
