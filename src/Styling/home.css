@@ -118,7 +118,8 @@
   #bookFree {
     min-height: 400px;
     width: 100vw;
-    background-size: cover;
+    background-size: 100vw 100%;
+    background-position-y: 0;
     justify-content: flex-start;
     align-items: center;
     padding-top: 50px;
@@ -129,7 +130,6 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.678);
   }
   
   #bookFree > h1, #bookFree > p{
@@ -139,7 +139,7 @@
   
     padding: 12px;
     border-radius: 5px;
-    transition: ease 1s;
+    transition: ease 0.2s;
     cursor: pointer;
     border: 1px solid gray;
     background-color: white;
@@ -147,9 +147,8 @@
   }
   
   #schedule:hover{
-    transition: ease 1s;
-    background-color: transparent;
-    border-color: white;
+    transition: ease 0.2s;
+    background-color: rgba(255, 255, 255, 0.541);
   }
   
   @media only screen and (max-width: 990px){
