@@ -16,14 +16,7 @@
     flex-wrap: wrap-reverse;
   }
   
-  .animatedHover{
-    transition: all 0.3s ease
-  }
   
-  .animatedHover:hover{
-    transition: all 0.3s ease;
-    transform: scale(1.05,1.05);
-  }
   
   #hero > div > .wrapper {
     display: flex;
