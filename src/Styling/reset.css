@@ -35,7 +35,7 @@ ol[role='list'] {
 
 /* Set core body defaults */
 body {
-  padding-top: 80px;
+  padding-top: calc(80px + 2vw);
   font-family: Founders, sans-serif;
   margin: 0;
 }

@@ -6,7 +6,8 @@ const path = require('path');
  module.exports = {
    entry: {
      main: './src/JS/index.js',
-     about: './src/JS/about.js'
+     about: './src/JS/about.js',
+     how_it_works: './src/JS/how_it_works.js'
    },
    plugins: [
      new HtmlWebpackPlugin({
@@ -21,6 +22,13 @@ const path = require('path');
       filename: 'about.html',
       template: './src/about.html',
       chunks: ['about']
+     }),
+
+     new HtmlWebpackPlugin({
+      title: 'How_It_Works',
+      filename: 'how_it_works.html',
+      template: './src/how_it_works.html',
+      chunks: ['how_it_works']
      })
      
 
