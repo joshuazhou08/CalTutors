@@ -23,7 +23,7 @@ createHomePage();
 
 
 //About section
-const handPickedHeading = `Your <span class = "emphasis">STEM </span> Tutor: Joshua`
+const handPickedHeading = `Your Head <span class = "emphasis">STEM </span> Tutor: Joshua`
 
 const handPickedTutors = `My focus is on the <span class = "emphasis">Fundamentals</span>. During my time in school, I've realized most students struggle in classes due to 
 a lack of understanding of the fundamental 'whys' and 'hows' of math and science. Pure memorization of 
@@ -32,7 +32,7 @@ grasp of the fundamentals to unlock their full potential.`
 
 createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, handPickedTutors,)
 
-const sohrabHeading = `Your <span class = "emphasis"> Reading </span> And <span class = "emphasis"> Writing </span> Tutor: Sohrab`
+const sohrabHeading = `Your Head <span class = "emphasis"> Reading </span> And <span class = "emphasis"> Writing </span> Tutor: Sohrab`
 
 const sohrabPhilosophy = `I want to foster an environment for students to learn and grow and create an avenue for developing educational 
 goals and skills. I believe bridging the gap between academic learning in school and more engaging practices focused to each specific 

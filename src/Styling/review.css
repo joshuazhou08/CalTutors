@@ -9,6 +9,7 @@ em{
 
 #testimonials {
     min-height: 450px;
+    overflow-y: scroll;
     padding: 20px;  
     overflow-x: hidden;
 }
@@ -52,7 +53,7 @@ em{
 /*Scrolling Buttons */
 .scroll-right, .scroll-left{
     width: 60px;
-    opacity: 0.2;
+    opacity: 0.5;
     border-radius: 50%;
     border: rgb(58, 56, 56) solid 2px;
     position: absolute;
@@ -61,18 +62,18 @@ em{
 }
 
 .scroll-right:hover, .scroll-left:hover{
-    opacity: 0.6;
+    opacity: 0.9;
     cursor: pointer;
 }
 
 .scroll-right{
-    right: 3vw;
+    right: 1vw;
 }
 
 .scroll-left{
     transform: scaleX(-1);
     object-position: 2px;
-    left: 3vw;
+    left: 1vw;
 }
 
 @media screen and (max-width:450px){

@@ -8,8 +8,11 @@ import './section.js'
 import aboutHeroImg from './Images/About Hero.png'
 import josh from './Images/josh-hs.png'
 import rob from './Images/sohrab-hs.png'
+import dan from './Images/dan-hs.png'
 
 function makeProfile(img, major, name, position, intro){
+    let clicked = 0
+
     const container = document.createElement('div')
     container.style.position = 'relative'
 
@@ -22,8 +25,9 @@ function makeProfile(img, major, name, position, intro){
 
     const person = document.createElement('h2')
     person.textContent = name
+    person.style.fontWeight = 1000
 
-    const pos = document.createElement('h3')
+    const pos = document.createElement('h4')
     pos.textContent = position
 
     container.appendChild(profileImg)
@@ -36,12 +40,41 @@ function makeProfile(img, major, name, position, intro){
     about.classList.add('about-me')
 
     container.appendChild(about)
-    
+
     about.addEventListener('mouseenter', () => {
         profileImg.style.opacity = 0.4
+        maj.style.opacity = 0
+        person.style.opacity = 0
+        pos.style.opacity = 0
+        about.style.opacity = 1
     })
     about.addEventListener('mouseleave', () => {
         profileImg.style.opacity = 1
+        maj.style.opacity = 1
+        person.style.opacity = 1
+        pos.style.opacity = 1
+        about.style.opacity = 0
+    })
+
+   //For Mobile Devices
+    container.addEventListener('touchstart', () => {
+        if (!clicked){
+            profileImg.style.opacity = 0.4
+            maj.style.opacity = 0
+            person.style.opacity = 0
+            pos.style.opacity = 0
+            about.style.opacity = 1
+            clicked = 1
+        }
+        else{
+            profileImg.style.opacity = 1
+            maj.style.opacity = 1
+            person.style.opacity = 1
+            pos.style.opacity = 1
+            about.style.opacity = 0
+            clicked = 0
+        }
+        console.log("clicked")
     })
     return container
 }
@@ -51,7 +84,7 @@ const aboutHero = document.querySelector("#about-hero")
 aboutHero.src = aboutHeroImg
 
 //team
-const container = document.querySelector('.team-container')
+const container = document.querySelector('#management')
 
 const joshIntro = `I am a rising second-year student as UC Berkeley. I am passionate about engineering
 and math and their applications in space. During my free time, I enjoy playing sports as well as creating art.
@@ -69,6 +102,15 @@ container.appendChild(sohrab)
 
 //tutors
 
-const tutorContainer = document.querySelector('.tutor-container')
+const tutorContainer = document.querySelector('#tutors')
 
-const daniel = makeProfile
+const danielIntro = `Hi! My name is Daniel, and I am a rising second-year. As I continued to 
+master my writing skills through AP exams, college applications, and essays during my freshman year of college, 
+I gained valuable insights into what can elevate a student’s writing from satisfactory to excellent. My main focus 
+as your writing tutor is to ignite your intellectual fire, to give your writing ideas a deeper layer of nuance. 
+Then, I will teach you how to execute these ideas with effective rhetoric. In my free time, I like to play 
+pickleball and chess. I look forward to working with you!`
+
+const daniel = makeProfile(dan, 'UC Berkeley | Political Science + Data Science', 'Daniel Delpassand', 'Writing And Professional Development', danielIntro)
+
+tutorContainer.appendChild(daniel)
