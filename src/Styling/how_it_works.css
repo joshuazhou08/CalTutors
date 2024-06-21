@@ -1,0 +1,30 @@
+#hero {
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-us{
+    margin: 20px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border-width: 0;
+    cursor: pointer;
+    font-weight: 1000;
+    color:white;
+    background-color: rgb(72, 147, 233);
+}
+
+#logistics{
+    display: flex;
+    justify-content: space-around;
+    gap: 7.5vw;
+    flex-wrap: wrap;
+}
+
+#logistics img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}

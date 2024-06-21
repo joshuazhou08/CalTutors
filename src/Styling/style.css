@@ -1,5 +1,6 @@
 :root{
   --lightblue: rgb(60, 146, 216);
+  --buttonblue: rgb(159, 193, 245);
 }
 
 *{
@@ -54,6 +55,15 @@
   align-items: center;
 }
 
+.caption{
+  font-size: 15px;
+  color: rgb(85, 85, 85);
+  font-family: Founders;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5em;
+}
+
 h1{
   font-size: 48px;
   font-weight: 300;
@@ -90,6 +100,29 @@ ul{
   transform: scale(1.05,1.05);
 }
 
+.emphasis {
+  color: var(--lightblue);
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  background-color: var(--buttonblue);
+  font-weight: 1000;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
 @media (max-width: 768px){
   h1, p{
     padding: 0 10px;

@@ -39,7 +39,7 @@ li, nav > p {
 
 #number {
     font-weight: 550;
-    font-size: calc(10px + 0.3vw);
+    font-size: calc(12px + 0.3vw);
     margin-left: auto;
 
 }
@@ -51,12 +51,17 @@ nav > div {
     align-items: center;
     overflow-x: visible;
 }
+nav > div> button{
+    font-weight: 1000;
+    font-size: calc(12px + 0.3vw);
+    border-radius: 10px;
+    border-style: solid;
+}
 nav > div> button, #get-started {
     padding: 10px 20px;
-    background-color: rgb(159, 193, 245);
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(159, 193, 245);
+    background-color: var(--buttonblue);
+
+    border-color: var(--buttonblue);
     cursor: pointer;
 }
 
@@ -80,14 +85,9 @@ a{
     color: rgb(42, 59, 71);
 }
 
-#embark{
-    font-size: calc(10px + 0.3vw);
-}
-
 #contact {
     background-color: rgb(233, 233, 233);
     border-color: rgb(233, 233, 233);
-    font-size: calc(10px + 0.3vw);
 }
 
 /*For Nav Bar To Become Condensed */

@@ -6,9 +6,9 @@ import '../Styling/footer.css'
 import '../Styling/about.css'
 import './section.js'
 import aboutHeroImg from './Images/About Hero.png'
-import josh from './Images/josh-hs.png'
-import rob from './Images/sohrab-hs.png'
-import dan from './Images/dan-hs.png'
+import josh from './Images/headshots/josh-hs.png'
+import rob from './Images/headshots/sohrab-hs.png'
+import dan from './Images/headshots/dan-hs.png'
 
 function makeProfile(img, major, name, position, intro){
     let clicked = 0
