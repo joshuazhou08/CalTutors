@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-#contact-us{
+#venmo{
     margin: 20px;
     padding: 10px 15px;
     border-radius: 20px;
@@ -16,22 +16,8 @@
     background-color: var(--darkblue)
 }
 
-#logistics{
-    display: flex;
-    justify-content: space-around;
-    gap: 7.5vw;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-#logistics div {
-    max-width: 300px;
+main{
     display: flex;
     flex-direction: column;
-}
-
-#logistics img {
-    width: auto;
-    height: 200px;
-    object-fit: contain;
+    align-items: center;
 }
