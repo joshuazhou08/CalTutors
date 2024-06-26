@@ -13,7 +13,7 @@
     cursor: pointer;
     font-weight: 1000;
     color:white;
-    background-color: rgb(72, 147, 233);
+    background-color: var(--darkblue)
 }
 
 #logistics{
@@ -21,10 +21,17 @@
     justify-content: space-around;
     gap: 7.5vw;
     flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#logistics div {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 #logistics img {
     width: auto;
-    height: 300px;
-    object-fit: cover;
+    height: 200px;
+    object-fit: contain;
 }

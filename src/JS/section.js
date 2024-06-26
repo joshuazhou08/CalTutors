@@ -1,6 +1,5 @@
 import '../Styling/section.css'
 
-
 const main = document.querySelector('main')
 
 function createSection(section, imageURL, headingText, bodyText, flipped = false){

@@ -2,24 +2,45 @@ import '../Styling/reset.css'
 import '../Styling/style.css'
 import '../Styling/nav.css'
 import '../Styling/footer.css'
+import '../Styling/home.css'
 import './section.js'
 import Cartoon1 from './Images/Cartoon1.png'
 import Spirit from './Images/Spirit.jpg'
 import {createSection} from './section.js'
-import {createHomePage} from './home.js'
 import Sohrab from './Images/Sohrab.png'
 import Video from '../Videos/tutoring.mp4'
 import arrow from './Images/arrow.jpeg'
 import BookBackground from './Images/BookBackground.png'
+import hero from './Images/hero.jpeg'
 import './review.js'
 import './nav_footer.js'
+import './fadeEffect.js'
 
-
+let i = 0;
+function typeSentence(sentence, eleRef, delay = 1000) {
+    const letters = sentence.split("");
+    eleRef.append(letters[i]);
+    if (i < sentence.length - 1){
+        i = i+1;
+        setTimeout(()=>typeSentence(sentence, eleRef, delay), delay);
+    }
+    return;
+  }
 
 
 //Hero Section
 
-createHomePage();
+//const heroImage = document.querySelector('#hero-img')
+
+//heroImage.src = hero
+
+//Lumina Type In Effect
+const lum = document.querySelector('#LUMINA')
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    typeSentence('LUMINA', lum, 150);
+  }
+)
 
 
 //About section

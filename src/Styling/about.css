@@ -102,12 +102,14 @@
 }
 @media only screen and (max-width: 990px){
     #about-hero{
-        width: 80%;
+        width: 100%;
         margin-right: 0;
     }
     
     #hero > .text-wrapper{
-        width: 80%;
+        width: 100%;
+        text-align: center;
+
     }
   
   }

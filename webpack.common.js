@@ -7,7 +7,8 @@ const path = require('path');
    entry: {
      main: './src/JS/index.js',
      about: './src/JS/about.js',
-     how_it_works: './src/JS/how_it_works.js'
+     how_it_works: './src/JS/how_it_works.js',
+     pricing: './src/JS/pricing.js'
    },
    plugins: [
      new HtmlWebpackPlugin({
@@ -29,9 +30,14 @@ const path = require('path');
       filename: 'how_it_works.html',
       template: './src/how_it_works.html',
       chunks: ['how_it_works']
-     })
+     }),
      
-
+     new HtmlWebpackPlugin({
+      title: 'Pricing',
+      filename: 'pricing.html',
+      template: './src/pricing.html',
+      chunks: ['pricing']
+     })  
    ],
    output: {
      filename: "[name].js",
