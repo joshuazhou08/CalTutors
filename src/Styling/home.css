@@ -6,7 +6,7 @@
   
   #hero {
     overflow-y: hidden;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     width: 100vw;
