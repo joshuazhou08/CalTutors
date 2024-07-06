@@ -83,8 +83,8 @@ function makeProfile(img, major, name, position, intro){
 const aboutHero = document.querySelector("#about-hero")
 aboutHero.src = aboutHeroImg
 
+const container = document.querySelector('#tutors')
 //team
-const container = document.querySelector('#management')
 
 const joshIntro = `I am a rising second-year student as UC Berkeley. I am passionate about engineering
 and math and their applications in space. During my free time, I enjoy playing sports as well as creating art.
@@ -94,15 +94,15 @@ const sohrabIntro = `Beginning in high school, I was always on the lookout for b
 opportunities. Working with Josh, I focus on delivering the best customer experience as both a tutor and
 marketer. I really enjoy playing soccer as well as spending time with my friends. Welcome to Luminous!`
 
-const joshua = makeProfile(josh, 'UC Berkeley | EECS + Applied Math', 'Joshua Zhou', 'Founder', joshIntro)
-const sohrab = makeProfile(rob, 'IVC | Economics', 'Sohrab Sadjadi', 'Business Lead', sohrabIntro)
+const joshua = makeProfile(josh, 'UC Berkeley | EECS + Applied Math', 'Joshua Zhou', 'College Math Tutor', joshIntro)
+const sohrab = makeProfile(rob, 'IVC | Economics', 'Sohrab Sadjadi', 'SAT and ACT Reading and Writing', sohrabIntro)
 
 container.appendChild(joshua)
 container.appendChild(sohrab)
 
 //tutors
 
-const tutorContainer = document.querySelector('#tutors')
+
 
 const danielIntro = `Hi! My name is Daniel, and I am a rising second-year. As I continued to 
 master my writing skills through AP exams, college applications, and essays during my freshman year of college, 
@@ -113,4 +113,4 @@ pickleball and chess. I look forward to working with you!`
 
 const daniel = makeProfile(dan, 'UC Berkeley | Political Science + Data Science', 'Daniel Delpassand', 'Writing And Professional Development', danielIntro)
 
-tutorContainer.appendChild(daniel)
+container.appendChild(daniel)
