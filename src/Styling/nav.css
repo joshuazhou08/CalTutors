@@ -29,7 +29,7 @@ nav{
 }
 
 #Logo {
-    width: clamp(300px, calc(10vw + 70px), 500px);
+    width: clamp(250px, calc(2vw + 70px), 500px);
 }
 li, nav > p {
     padding: 10px 1vw;
