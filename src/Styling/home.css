@@ -6,13 +6,13 @@
   
   #hero {
     overflow-y: hidden;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     width: 100vw;
     background-color: white;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 60px 0;
   }
   
   
@@ -20,20 +20,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    max-width: 750px;
+    margin: 60px 0;
     gap: 10px;
-    width: 550px;
+    width: min(80vw, 500px);
     text-align: center;
   }
   
+
   #hero > .textwrapper *:not(button) {
     margin: 0;
   }
   #hero h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: calc(65px + 3vw);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(65px + 1vw);
     color: var(--darkblue);
+    padding: 0;
   }
 
   #hero-img {
@@ -42,7 +43,7 @@
 
   #hero p {
     font-family: FoundersBold;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 200;
   }
 
@@ -55,10 +56,10 @@
   
   #get-started{
     box-sizing: content-box;
-    border-radius: 5px;
-    padding: 10px 50px;
+    border-radius: 50px;
+    padding: 10px 30px;
     background-color: var(--darkblue);
-    border: 1px rgb(161, 200, 245) solid;
+    border: 1px solid;
     color: white;
     font-size: 20px;
     font-family: FoundersBold, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -77,6 +78,7 @@
   #subjects > li {
     background-color: white;
   }
+  
   
 
   
@@ -98,6 +100,7 @@
     color: white;
     width: 880px;
     min-height: 300px;
+    pointer-events: none;
   }
   
   #video > :not(video) {
@@ -173,7 +176,7 @@
       gap: 0;
     }
     #hero > div > .wrapper > :not(button){
-      width: 80vw;
+      width: 80%;
     }
   
     #hero > div > .wrapper > button{

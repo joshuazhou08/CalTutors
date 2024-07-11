@@ -24,11 +24,13 @@
   transform: scale(0.7);
   opacity: 0; 
   display: none;
+  z-index: 2;
 }
 
 .active{
   transform: scale(1);
   opacity: 100;
+  z-index: 100;
 }
 
 .flex{
@@ -129,5 +131,8 @@ ul{
 @media (max-width: 768px){
   h1, h2, p:not(.number) {
     padding: 0 40px;
+  }
+  .caption {
+    font-size: 18px;
   }
 }

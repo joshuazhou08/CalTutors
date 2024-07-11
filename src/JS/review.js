@@ -32,19 +32,19 @@ function addReview (stars, name, position, review, number=reviewNum){
     return
 }
 
-const Syona = `I think that Joshua helped me a lot in terms of reviewing some of the topics that I struggled 
+const Syona = `I think that Lumina helped me a lot in terms of reviewing some of the topics that I struggled 
 with in both physics and math so I feel more prepared to take the AP exams for Calculus BC and Physics 1. I 
 would definitely recommend him as a tutor and give him a 5 rating!`
 
 const Justine = `Great tutor very patient.`
 
-const IsabellaMaria = `Josh was a super helpful tutor! He is very patient and focuses on the foundational 
+const IsabellaMaria = `Lumina was super helpful! The tutor I was assigned with was very patient and focuses on the foundational 
 theories involved in solving a problem so I would be able to understand the topic better as a whole. I 
-highly recommend working with Josh.`
+highly recommend working with Lumina.`
 
-const Jacob = `JZ is a great tutor who takes the time to explain every step intricately when solving problem. 
-He listens to what you say and explains what your problems are and is very flexible overall. I would 
-definitely recommend JZ to anybody who needs help in math.`
+const Jacob = `Lumina has great tutors who take the time to explain every step intricately when solving problems. 
+They listen to what you say and explain what your problems are. They are very flexible overall. I would 
+definitely recommend Lumina to anybody who needs help in math.`
 
 const Preston = `Joshua is a super math teacher. He is busy himself but he always trying his 
 best to work with our schedule. He is patient, caring and fun. He does not just teach but also goes beyond 

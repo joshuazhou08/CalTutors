@@ -1,8 +1,11 @@
 import Logo from './Images/Logo Words.png'
 import MenuIcon from './Images/Menu.png'
 import TikTok from './Images/TikTok.png'
+import favicon from './Images/favicon.png'
 
-
+//Favicon
+const icon = document.querySelector('#favicon')
+icon.href = favicon
 //NavBar stuff
 const menuButton = document.querySelector('#menu-button')
 menuButton.src = MenuIcon
@@ -48,7 +51,7 @@ Instagram.addEventListener('click', () =>{
 
 const GMAIL = document.querySelector('#social-icons li:nth-child(2)>svg')
 GMAIL.addEventListener('click', () =>{
-    window.open('mailto:luminoustutor@gmail.com')
+    window.open('mailto:luminatutor@gmail.com')
 })
 
 

@@ -12,3 +12,8 @@ import tutoring from './Images/Logistics/tutoring.jpeg'
 document.querySelector("#step1").src = contact;
 document.querySelector("#step2").src = connect;
 document.querySelector("#step3").src = tutoring;
+
+const contactButton = document.querySelector('#contact-us')
+contactButton.addEventListener('click', () => {
+    window.open('https://forms.gle/uR35Wb4gU7EknXgn7')
+})

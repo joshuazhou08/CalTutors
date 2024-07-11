@@ -7,11 +7,10 @@ import './section.js'
 import Cartoon1 from './Images/Cartoon1.png'
 import Spirit from './Images/Spirit.jpg'
 import {createSection} from './section.js'
-import Sohrab from './Images/Sohrab.png'
+import Companile from './Images/companile.jpeg'
 import Video from '../Videos/tutoring.mp4'
 import arrow from './Images/arrow.jpeg'
 import BookBackground from './Images/BookBackground.png'
-import hero from './Images/hero.jpeg'
 import './review.js'
 import './nav_footer.js'
 import './fadeEffect.js'
@@ -44,22 +43,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 //About section
-const handPickedHeading = `Your Head <span class = "emphasis">STEM </span> Tutor: Joshua`
+const handPickedHeading = `Our Teaching <span class = "emphasis"> Philosophy </span>`
 
-const handPickedTutors = `My focus is on the <span class = "emphasis">Fundamentals</span>. During my time in school, I've realized most students struggle in classes due to 
-a lack of understanding of the fundamental 'whys' and 'hows' of math and science. Pure memorization of 
-formulas only works for so long. With my lessons, I ensure you that your child will have a strong
+const handPickedTutors = `Our focus is on the <span class = "emphasis">fundamentals</span>. Having experienced the same, we have realized most students struggle in classes due to 
+a lack of understanding of the fundamental 'whys' and 'hows' of harder subjects. Pure memorization of 
+concepts only works for so long. Here at Lumina, we want students to have a strong
 grasp of the fundamentals to unlock their full potential.`
 
 createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, handPickedTutors,)
 
-const sohrabHeading = `Your Head <span class = "emphasis"> Reading </span> And <span class = "emphasis"> Writing </span> Tutor: Sohrab`
+const sohrabHeading = `Students <span class = "emphasis"> For </span> Students`
 
-const sohrabPhilosophy = `I want to foster an environment for students to learn and grow and create an avenue for developing educational 
-goals and skills. I believe bridging the gap between academic learning in school and more engaging practices focused to each specific 
-student is key to success in the classroom. `
+const sohrabPhilosophy = `We practice what we preach. Our tutoring service connects you with students who have successfully walked the path you're on. Benefit from one-on-one mentorship with those who sincerely understand and have achieved the success you seek.`
 
-createSection(document.querySelector('#section2'), Sohrab, sohrabHeading, sohrabPhilosophy, true)
+createSection(document.querySelector('#section2'), Companile, sohrabHeading, sohrabPhilosophy, true)
 
 
 const satisfactionHeading = `First 30 Minutes Free <span class = "emphasis"> #TeamSpirit </span>`
@@ -83,10 +80,12 @@ scrollRightBtn.src = arrow
 
 scrollLeftBtn.addEventListener('click', ()=>{
     testimonials.scrollLeft -= 450
+    console.log('click left')
 })
 
 scrollRightBtn.addEventListener('click', ()=>{
     testimonials.scrollLeft += 450
+    console.log('click right')
 })
 
 /*Book Free Section*/

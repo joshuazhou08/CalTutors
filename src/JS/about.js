@@ -88,11 +88,11 @@ const container = document.querySelector('#tutors')
 
 const joshIntro = `I am a rising second-year student as UC Berkeley. I am passionate about engineering
 and math and their applications in space. During my free time, I enjoy playing sports as well as creating art.
-I welcome you to Luminous and look forward to working with you! 
+I welcome you to Lumina and look forward to working with you! 
  `
 const sohrabIntro = `Beginning in high school, I was always on the lookout for business ventures and
 opportunities. Working with Josh, I focus on delivering the best customer experience as both a tutor and
-marketer. I really enjoy playing soccer as well as spending time with my friends. Welcome to Luminous!`
+marketer. I really enjoy playing soccer as well as spending time with my friends. Welcome to Lumina!`
 
 const joshua = makeProfile(josh, 'UC Berkeley | EECS + Applied Math', 'Joshua Zhou', 'College Math Tutor', joshIntro)
 const sohrab = makeProfile(rob, 'IVC | Economics', 'Sohrab Sadjadi', 'SAT and ACT Reading and Writing', sohrabIntro)

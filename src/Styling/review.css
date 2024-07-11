@@ -53,11 +53,12 @@ em{
 /*Scrolling Buttons */
 .scroll-right, .scroll-left{
     width: 60px;
-    opacity: 0.5;
+    opacity: 0.3;
     border-radius: 50%;
     border: rgb(58, 56, 56) solid 2px;
     position: absolute;
     transition: all 0.3s ease;
+    z-index: 3;
 
 }
 
@@ -87,5 +88,11 @@ em{
 
     #testWrapper {
         gap: 0;
+    }
+    .scroll-right:hover, .scroll-left:hover{
+        opacity: 0.3;
+    }
+    .scroll-right:hover, .scroll-right:active, .scroll-left:hover, .scroll-left:active{
+        opacity: 0.9;
     }
 }

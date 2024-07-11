@@ -8,7 +8,8 @@
 #venmo{
     margin: 20px;
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 30px;
+    font-size: 18px;
     border-width: 0;
     cursor: pointer;
     font-weight: 1000;

@@ -21,14 +21,20 @@
 .section .wrapper{
     width: 40%;
     min-width: 450px;
+    align-items: flex-start;
 }
 
-@media only screen and (max-width: 990px){
+.section .wrapper * {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 700px){
     .section{
-        gap: 10px;
+        gap: 20px;
     }
     .section .wrapper, .section img{
-        width: 90vw;
+        width: 80vw;
         min-width: 0;
     }
 
