@@ -9,6 +9,9 @@ import aboutHeroImg from './Images/About Hero.png'
 import josh from './Images/headshots/josh-hs.png'
 import rob from './Images/headshots/sohrab-hs.png'
 import dan from './Images/headshots/dan-hs.png'
+import veerImg from './Images/headshots/veer.png'
+import arjunImg from './Images/headshots/arjun.png'
+import charlesImg from './Images/headshots/charles.png'
 
 class tutor {
     static OurTutors = document.querySelector('#tutors')
@@ -107,12 +110,31 @@ as your writing tutor is to ignite your intellectual fire, to give your writing 
 Then, I will teach you how to execute these ideas with effective rhetoric. In my free time, I like to play 
 pickleball and chess. I look forward to working with you!`
 
+const veerIntro = `My name is Veer Adhvaryu and I am studying Aerospace Engineering with and Electrical Engineering 
+and Computer Science minor at UC Berkeley. I teach math, physics, python, APUSH, SAT/ACT (score of 1530 on SAT), and 
+most other STEM-related subjects. In my free time, I love to hang out with my friends, go to the beach, and watch sports!`
 
-const joshua = new tutor(josh, 'UC Berkeley | EECS + Applied Math', 'Joshua Zhou', 'College Math Tutor', joshIntro)
-const sohrab = new tutor(rob, 'IVC | Economics', 'Sohrab Sadjadi', 'SAT and ACT Reading and Writing', sohrabIntro)
+const charlesIntro = `Hello! My name is Charles Habgood, and I am an undergraduate student at UC Berkeley studying 
+Environmental Engineering. I help students in a wide range of subjects, including math, college essay writing, 
+creative writing, and the SAT/ACT. In my free time, I love to play soccer, go on adventures with my dog, and ski.`
+
+const arjunIntro = `Hey! I'm Arjun, a rising senior at UC Berkeley majoring in Bioengineering with a minor in Education. 
+As Academic Vice President of a major pre-med organization on campus and founder of a nonprofit teaching kids tennis, 
+I'm passionate about educating and mentoring. I enjoy tutoring pre-med courses, SAT/ACT prep, and STEM subjects. I've also 
+guided students in pursuing extracurriculars like research and launching nonprofits. Beyond academics, I'm into photography, 
+exploring new foods, and playing tennis!`
+
+
+const joshua = new tutor(josh, 'UC Berkeley | EECS + Applied Math', 'Joshua Zhou', 'College Math', joshIntro)
+const sohrab = new tutor(rob, 'IVC | Economics', 'Sohrab Sadjadi', 'SAT/ACT Prep', sohrabIntro)
 const daniel = new tutor(dan, 'UC Berkeley | Political Science + Data Science', 'Daniel Delpassand', 'Writing And Professional Development', danielIntro)
+const veer = new tutor(veerImg, 'UC Berkeley | Aerospace + EECS', 'Veer Adhvaryu', 'STEM and Python', veerIntro)
+const charles = new tutor(charlesImg, 'UC Berkeley | Environmental Engineering', 'Charles Habgood', 'College Writing and SAT/ACT Prep', charlesIntro)
+const arjun = new tutor(arjunImg, 'UC Berkeley | Bioengineering + Education', 'Arjun Shivkumar', 'Pre-Med and SAT/ACT Prep', arjunIntro )
 
-
+arjun.makeProfile()
 joshua.makeProfile()
+charles.makeProfile()
+veer.makeProfile()
 daniel.makeProfile()
 //tutors

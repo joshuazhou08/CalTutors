@@ -15,4 +15,3 @@ venmo.addEventListener('click', ()=>
 
 const venmoImage = document.querySelector('#venmoCode')
 venmoImage.src = venmoImg;
-venmoImage.style.width = 'max(700px, 50vw)'

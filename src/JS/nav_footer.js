@@ -28,7 +28,7 @@ contactButton.addEventListener('click', () => {
 const embarkButton = document.querySelector('#embark')
 
 embarkButton.addEventListener('click', ()=>{
-    window.open('https://calendly.com/luminoustutor/1-hour-session')
+    window.open('https://calendly.com/luminatutor/30min')
 })
 
 
@@ -41,7 +41,6 @@ footerImage.style.filter = 'brightness(0.5)' */
 
 
 /*Footer stuff*/
-document.querySelector('#TikTok').src = TikTok
 
 const Instagram = document.querySelector('#social-icons li:nth-child(1) svg')
 
@@ -55,8 +54,3 @@ GMAIL.addEventListener('click', () =>{
 })
 
 
-const Tiktok = document.querySelector('#TikTok')
-
-Tiktok.addEventListener('click', () =>{
-    window.open('https://www.tiktok.com/@joshuatutoring')
-})

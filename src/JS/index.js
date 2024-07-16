@@ -41,6 +41,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
   }
 )
 
+const freeFirstSession = document.querySelector('#get-started');
+freeFirstSession.addEventListener('click', ()=>{
+    window.open('https://calendly.com/luminatutor/30min')
+})
 
 //About section
 const handPickedHeading = `Our Teaching <span class = "emphasis"> Philosophy </span>`
@@ -92,6 +96,6 @@ scrollRightBtn.addEventListener('click', ()=>{
 document.querySelector('#bookFree').style.backgroundImage = `url(${BookBackground})`
 const scheduleNow = document.querySelector("#schedule")
 scheduleNow.addEventListener('click', ()=>{
-    window.open('https://calendly.com/luminoustutor/30min')
+    window.open('https://calendly.com/luminatutor/30min')
 })
 

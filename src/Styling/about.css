@@ -15,7 +15,6 @@
 }
 #hero p {
     font-size: 19px;
-    padding: 0 20px;
 }
 #team {
     display: flex;
@@ -50,8 +49,9 @@
 
 
 .team-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
     justify-content: center;
     gap:3vw;
     margin: 30px;
