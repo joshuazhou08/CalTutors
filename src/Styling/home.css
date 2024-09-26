@@ -32,7 +32,7 @@
   }
   #hero h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: calc(65px + 1vw);
+    font-size: calc(30px + 2vw);
     color: var(--darkblue);
     padding: 0;
   }
@@ -68,7 +68,7 @@
   }
   
   #subjects {
-    width: 90vw;
+    width: 1600px;
     padding: 10px 0;
     gap: 10px;
     justify-content: center;
@@ -83,36 +83,23 @@
 
   
   /* video stuff */
-  
-  video {
-    width: 100vw;
-    height: 300px;
-    object-position: bottom;
-    object-fit: cover;
-    filter: brightness(0.5);
-    position: absolute;
-    z-index: 0;
-    left: 0;
-  }
-  
-  #video {
+
+  #moneyback{
     margin-top: 75px;
     color: white;
-    width: 880px;
+    max-width: 1600px;
+    width: min(1600px, 100vw);
     min-height: 300px;
     pointer-events: none;
+    padding-left: 10vw;
   }
   
-  #video > :not(video) {
-    position: relative;
-    z-index: 1;
-  }
-  
-  #video > h1{
+  #moneyback > h1{
     font-size: 42px;
     letter-spacing: 1px;
     font-family: Founders, sans-serif;
-    margin: 2px 8px;
+    margin: 2px 0;
+    padding: 0;
   }
   
   .highlighted {
@@ -182,5 +169,5 @@
     #hero > div > .wrapper > button{
       justify-self: center
     }
-  
+
   }

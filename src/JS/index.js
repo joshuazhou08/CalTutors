@@ -8,7 +8,7 @@ import Cartoon1 from './Images/Cartoon1.png'
 import Spirit from './Images/Spirit.jpg'
 import {createSection} from './section.js'
 import Companile from './Images/companile.jpeg'
-import Video from '../Videos/tutoring.mp4'
+import Tutor from './Images/tutoring.png'
 import arrow from './Images/arrow.jpeg'
 import BookBackground from './Images/BookBackground.png'
 import './review.js'
@@ -27,6 +27,8 @@ function typeSentence(sentence, eleRef, delay = 1000) {
   }
 
 
+const calendly = "https://calendly.com/caltutorsteam/30min";
+
 //Hero Section
 
 //const heroImage = document.querySelector('#hero-img')
@@ -37,13 +39,13 @@ function typeSentence(sentence, eleRef, delay = 1000) {
 const lum = document.querySelector('#LUMINA')
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    typeSentence('LUMINA', lum, 150);
+    typeSentence('CALTUTORS', lum, 150);
   }
 )
 
 const freeFirstSession = document.querySelector('#get-started');
 freeFirstSession.addEventListener('click', ()=>{
-    window.open('https://calendly.com/luminatutor/30min')
+    window.open(calendly)
 })
 
 //About section
@@ -58,7 +60,9 @@ createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, 
 
 const sohrabHeading = `Students <span class = "emphasis"> For </span> Students`
 
-const sohrabPhilosophy = `We practice what we preach. Our tutoring service connects you with students who have successfully walked the path you're on. Benefit from one-on-one mentorship with those who sincerely understand and have achieved the success you seek.`
+const sohrabPhilosophy = `We practice what we preach. Our tutoring service connects you with students who have
+ successfully walked the path you're on. Benefit from one-on-one mentorship with those who sincerely understand
+  and have achieved the success you seek.`
 
 createSection(document.querySelector('#section2'), Companile, sohrabHeading, sohrabPhilosophy, true)
 
@@ -72,7 +76,7 @@ child to learn while also having fun. Sit back, relax, and watch your child shin
 
 createSection(document.querySelector('#section3'), Spirit, satisfactionHeading, satisfaction)
 
-document.querySelector('video > source').src = Video
+document.querySelector('#moneyback').style.backgroundImage = `url(${Tutor})`
 
 //Review section scroll code
 const scrollLeftBtn = document.querySelector('.scroll-left')
@@ -96,6 +100,6 @@ scrollRightBtn.addEventListener('click', ()=>{
 document.querySelector('#bookFree').style.backgroundImage = `url(${BookBackground})`
 const scheduleNow = document.querySelector("#schedule")
 scheduleNow.addEventListener('click', ()=>{
-    window.open('https://calendly.com/luminatutor/30min')
+    window.open(calendly)
 })
 

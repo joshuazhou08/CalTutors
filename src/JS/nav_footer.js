@@ -1,7 +1,6 @@
 import Logo from './Images/Logo Words.png'
 import MenuIcon from './Images/Menu.png'
-import TikTok from './Images/TikTok.png'
-import favicon from './Images/favicon.png'
+import favicon from './Images/favicon.ico'
 
 //Favicon
 const icon = document.querySelector('#favicon')
@@ -14,10 +13,14 @@ const logo = document.querySelector('#Logo')
 logo.src = Logo
 
 const navMenu = document.querySelector('#slim-nav')
+const links = document.querySelectorAll('#slim-nav > li')
+links.forEach((element) => element.classList.add('hidden'))
 
 menuButton.addEventListener('click', ()=>{
     navMenu.classList.toggle('hidden')
     navMenu.classList.toggle('active')
+    links.forEach((element) => element.classList.toggle('hidden'))
+    links.forEach((element) => element.classList.toggle('active'))
 })
 
 const contactButton = document.querySelector('#contact')
@@ -26,9 +29,9 @@ contactButton.addEventListener('click', () => {
 })
 
 const embarkButton = document.querySelector('#embark')
-
+const calendly = "https://calendly.com/caltutorsteam/30min"
 embarkButton.addEventListener('click', ()=>{
-    window.open('https://calendly.com/luminatutor/30min')
+    window.open(calendly)
 })
 
 
@@ -45,12 +48,17 @@ footerImage.style.filter = 'brightness(0.5)' */
 const Instagram = document.querySelector('#social-icons li:nth-child(1) svg')
 
 Instagram.addEventListener('click', () =>{
-    window.open('https://www.instagram.com/joshuatutoring/')
+    window.open('https://www.instagram.com/luminatutors/')
 })
 
 const GMAIL = document.querySelector('#social-icons li:nth-child(2)>svg')
 GMAIL.addEventListener('click', () =>{
-    window.open('mailto:luminatutor@gmail.com')
+    window.open('mailto:caltutorsteam@gmail.com')
+})
+
+const Facebook = document.querySelector('#social-icons li:nth-child(3)>svg')
+Facebook.addEventListener('click', () =>{
+    window.open('https://www.facebook.com/profile.php?id=61562774625379&mibextid=LQQJ4d')
 })
 
 

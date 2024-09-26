@@ -49,9 +49,9 @@
 
 
 .team-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px;
     justify-content: center;
     gap:3vw;
     margin: 30px;
@@ -63,7 +63,8 @@
 .team-container img {
     width: 250px;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: 50%, 50px;
     margin-bottom: 20px;
     border-radius: 50%;
     background-color: rgba(119, 187, 214, 0.363);
@@ -100,6 +101,7 @@
     transition: all 0.3s ease;
     height: 100%;
     border: solid var(--lightblue) 1px;
+    overflow: hidden;
 }
 @media only screen and (max-width: 990px){
     #about-hero{

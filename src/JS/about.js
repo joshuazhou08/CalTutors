@@ -12,6 +12,9 @@ import dan from './Images/headshots/dan-hs.png'
 import veerImg from './Images/headshots/veer.png'
 import arjunImg from './Images/headshots/arjun.png'
 import charlesImg from './Images/headshots/charles.png'
+import jaxImg from './Images/headshots/jax.png'
+import yonaImg from './Images/headshots/yonatan.png'
+import skyeImg from './Images/headshots/skye.png'
 
 class tutor {
     static OurTutors = document.querySelector('#tutors')
@@ -124,6 +127,12 @@ I'm passionate about educating and mentoring. I enjoy tutoring pre-med courses, 
 guided students in pursuing extracurriculars like research and launching nonprofits. Beyond academics, I'm into photography, 
 exploring new foods, and playing tennis!`
 
+const jaxIntro = `Hi, I'm Jax, a junior at UC Berkeley studying Philosophy and Rhetoric. I've helped high school students write standout college admissions essays, drawing from my own success with six top 20 university acceptances. I also tutor K-12 English (including AP Lang/Lit), SAT/ACT prep, Spanish (from Spanish 1 to AP Spanish Lit), AP History, debate prep, and introductory college philosophy. In my spare time, I enjoy hiking, reading, and hanging out with my French Bulldog.`
+const yonaIntro = `I'm an Electrical Engineering & Computer Science major at UC Berkeley, and I'm interested in law school. 
+I tutor all subjects -- STEM, college essays, SAT/ACT, and English. I'm on the Cal Mock Trial team and I love hiking and nature. 
+I grew up in Baltimore, Maryland, and I now live in Marin County, CA! `
+
+const skyeIntro = 'Incoming senior at Caltech, majoring in computer science. I am open to offering tutoring in all subjects such as stem subjects, essay help, college counseling, and more. I look forward to working with you!'
 
 const joshua = new tutor(josh, 'UC Berkeley | EECS + Applied Math', 'Joshua Zhou', 'College Math', joshIntro)
 const sohrab = new tutor(rob, 'IVC | Economics', 'Sohrab Sadjadi', 'SAT/ACT Prep', sohrabIntro)
@@ -131,10 +140,20 @@ const daniel = new tutor(dan, 'UC Berkeley | Political Science + Data Science', 
 const veer = new tutor(veerImg, 'UC Berkeley | Aerospace + EECS', 'Veer Adhvaryu', 'STEM and Python', veerIntro)
 const charles = new tutor(charlesImg, 'UC Berkeley | Environmental Engineering', 'Charles Habgood', 'College Writing and SAT/ACT Prep', charlesIntro)
 const arjun = new tutor(arjunImg, 'UC Berkeley | Bioengineering + Education', 'Arjun Shivkumar', 'Pre-Med and SAT/ACT Prep', arjunIntro )
+const jax = new tutor(jaxImg, 'UC Berkeley | Philosophy + Rhetoric', 'Jax Armstrong', 'College Counseling', jaxIntro)
+const yona = new tutor(yonaImg, 'UC Berkeley | EECS', 'Yonatan Paz-Priel', 'STEM and College Counseling', yonaIntro)
+const skye = new tutor(skyeImg, 'Caltech | Computer Science', 'Skye Ruedas', 'College Courses and College Counseling', skyeIntro)
+
 
 arjun.makeProfile()
+skye.makeProfile()
 joshua.makeProfile()
+yona.makeProfile()
 charles.makeProfile()
+
 veer.makeProfile()
+jax.makeProfile()
 daniel.makeProfile()
+sohrab.makeProfile()
+
 //tutors

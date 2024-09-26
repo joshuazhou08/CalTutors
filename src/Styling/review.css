@@ -9,9 +9,11 @@ em{
 
 #testimonials {
     min-height: 450px;
+    width: min(100vw, 1600px);
     overflow-y: scroll;
     padding: 20px;  
     overflow-x: hidden;
+    position: relative;
 }
 
 #testWrapper{
@@ -19,7 +21,7 @@ em{
     gap: 30px;
     overflow-y: hidden;
     overflow-x: scroll;
-    max-width: 100%;
+    width: 100%;
     scroll-snap-type: x mandatory;
     /*scroll-behavior: smooth */
 }
@@ -68,13 +70,12 @@ em{
 }
 
 .scroll-right{
-    right: 1vw;
+    right: 1px;
 }
-
 .scroll-left{
     transform: scaleX(-1);
     object-position: 2px;
-    left: 1vw;
+    left: 1px;
 }
 
 @media screen and (max-width:450px){
