@@ -1,8 +1,9 @@
 :root{
-  --lightblue: rgb(60, 146, 216);
+  --lightblue: rgb(1, 83, 160);
   --buttonblue: rgb(159, 193, 245);
-  --darkblue: rgb(42, 93, 151);
+  --darkblue: rgb(0, 50, 98);
   --background: rgba(60, 167, 255, 0.082);
+  --orange: rgb(238, 120, 41);
 }
 
 
@@ -45,7 +46,6 @@
 /*Font stuff */
 .foundersH{
   font-family: FoundersBold, sans-serif;
-  font-weight: 800;
   color: rgba(19, 31, 48, 1);
 }
 

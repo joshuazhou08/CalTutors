@@ -9,7 +9,7 @@ import venmoImg from './Images/venmo.jpg'
 
 const venmo = document.querySelector('#venmo')
 venmo.addEventListener('click', ()=> 
-    {window.open('https://venmo.com/u/luminatutors')}
+    {window.open('https://account.venmo.com/u/CalTutors')}
     
 )
 

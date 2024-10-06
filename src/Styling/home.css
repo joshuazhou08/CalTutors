@@ -22,8 +22,9 @@
     align-items: center;
     margin: 60px 0;
     gap: 10px;
-    width: min(80vw, 500px);
+    width: min(80vw, 700px);
     text-align: center;
+    overflow-x: visible;
   }
   
 
@@ -32,9 +33,23 @@
   }
   #hero h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: calc(30px + 2vw);
-    color: var(--darkblue);
+    font-size: calc(40px + 2vw);
     padding: 0;
+    display: inline;
+  }
+
+  #CAL {
+    color: var(--orange);
+  }
+
+  #TUTORS {
+    color: var(--darkblue)
+  }
+
+  #hero h2 {
+    font-weight: 600;
+    font-size: calc(25px + 0.2vw);
+
   }
 
   #hero-img {
@@ -63,7 +78,7 @@
     color: white;
     font-size: 20px;
     font-family: FoundersBold, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 1000;
+    font-weight: 500;
     margin-top: 30px;
   }
   
@@ -87,11 +102,11 @@
   #moneyback{
     margin-top: 75px;
     color: white;
-    max-width: 1600px;
-    width: min(1600px, 100vw);
+    max-width: 1920px;
+    width: min(1920px, 100vw);
     min-height: 300px;
     pointer-events: none;
-    padding-left: 10vw;
+    padding-left: 12vw;
   }
   
   #moneyback > h1{
@@ -99,14 +114,13 @@
     letter-spacing: 1px;
     font-family: Founders, sans-serif;
     margin: 2px 0;
-    padding: 0;
+    padding: 0 10px;
   }
   
   .highlighted {
-    font-weight: 1000;
-    background-color: var(--lightblue);
+    font-weight: 600;
+    background-color: rgb(15, 114, 207);
     color: black;
-    padding: 2px 2px;
   }
   /*For Booking Free Schedule */
   

@@ -1,10 +1,15 @@
 import Logo from './Images/Logo Words.png'
 import MenuIcon from './Images/Menu.png'
 import favicon from './Images/favicon.ico'
+import webIcon from './Images/websiteIco.png'
 
 //Favicon
 const icon = document.querySelector('#favicon')
 icon.href = favicon
+
+//Website icon
+const websiteIcon = document.querySelector('#websiteIco')
+websiteIcon.content = webIcon
 //NavBar stuff
 const menuButton = document.querySelector('#menu-button')
 menuButton.src = MenuIcon

@@ -13,19 +13,15 @@ import arrow from './Images/arrow.jpeg'
 import BookBackground from './Images/BookBackground.png'
 import './review.js'
 import './nav_footer.js'
-import './fadeEffect.js'
-
-let i = 0;
+  
 function typeSentence(sentence, eleRef, delay = 1000) {
-    const letters = sentence.split("");
-    eleRef.append(letters[i]);
-    if (i < sentence.length - 1){
-        i = i+1;
-        setTimeout(()=>typeSentence(sentence, eleRef, delay), delay);
-    }
+    for (let i = 0; i < sentence.length; i++) {
+        setTimeout(() => {  eleRef.append(sentence[i]); }, delay * i);
+    };
     return;
   }
 
+  
 
 const calendly = "https://calendly.com/caltutorsteam/30min";
 
@@ -36,10 +32,12 @@ const calendly = "https://calendly.com/caltutorsteam/30min";
 //heroImage.src = hero
 
 //Lumina Type In Effect
-const lum = document.querySelector('#LUMINA')
+const cal = document.querySelector('#CAL')
+const tutors = document.querySelector('#TUTORS')
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    typeSentence('CALTUTORS', lum, 150);
+    typeSentence('CAL', cal, 150);
+    setTimeout(()=>typeSentence('TUTORS', tutors, 150), 1000);
   }
 )
 
@@ -53,7 +51,7 @@ const handPickedHeading = `Our Teaching <span class = "emphasis"> Philosophy </s
 
 const handPickedTutors = `Our focus is on the <span class = "emphasis">fundamentals</span>. Having experienced the same, we have realized most students struggle in classes due to 
 a lack of understanding of the fundamental 'whys' and 'hows' of harder subjects. Pure memorization of 
-concepts only works for so long. Here at Lumina, we want students to have a strong
+concepts only works for so long. Here at CalTutors, we want students to have a strong
 grasp of the fundamentals to unlock their full potential.`
 
 createSection(document.querySelector('#section1'), Cartoon1, handPickedHeading, handPickedTutors,)
