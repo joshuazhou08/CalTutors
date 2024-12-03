@@ -19,13 +19,11 @@ logo.src = Logo
 
 const navMenu = document.querySelector('#slim-nav')
 const links = document.querySelectorAll('#slim-nav > li')
-links.forEach((element) => element.classList.add('hidden'))
+
 
 menuButton.addEventListener('click', ()=>{
     navMenu.classList.toggle('hidden')
     navMenu.classList.toggle('active')
-    links.forEach((element) => element.classList.toggle('hidden'))
-    links.forEach((element) => element.classList.toggle('active'))
 })
 
 const contactButton = document.querySelector('#contact')

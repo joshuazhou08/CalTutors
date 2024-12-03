@@ -23,15 +23,19 @@
 
 .hidden{
   transform: scale(0.7);
+  transition: all 0.3s ease;
   opacity: 0; 
-  display: none;
+  visibility: hidden;
   z-index: 2;
 }
 
 .active{
   transform: scale(1);
+  transition: all 0.3s ease;
   opacity: 100;
   z-index: 100;
+  visibility: visible;
+  display: flex;
 }
 
 .flex{
