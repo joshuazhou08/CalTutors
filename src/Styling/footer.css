@@ -29,7 +29,7 @@ footer ul {
 footer li {
     font-weight: 400;
     padding: 0 18px;
-    font-size: 14px;
+    font-size: 18px;
     color: rgb(156, 156, 156);
     text-align: center;
 }
@@ -71,5 +71,6 @@ footer svg {
 @media screen and (max-width: 820px){
     footer ul {
         display: grid;
+        gap: 15px
     }
 }

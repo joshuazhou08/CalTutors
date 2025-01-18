@@ -55,6 +55,7 @@ em{
 /*Scrolling Buttons */
 .scroll-right, .scroll-left{
     width: 60px;
+    height: 60px;
     opacity: 0.3;
     border-radius: 50%;
     border: rgb(58, 56, 56) solid 2px;

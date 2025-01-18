@@ -27,6 +27,7 @@
   opacity: 0; 
   visibility: hidden;
   z-index: 2;
+  position: absolute;
 }
 
 .active{
@@ -138,5 +139,27 @@ ul{
   }
   .caption {
     font-size: 18px;
+  }
+}
+
+
+/*video testimonial stuff */
+
+iframe {
+  width: 50vw;
+  height: calc(50vw * 9 / 16);
+  margin: 25px 0;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (max-width: 900px) {
+  iframe {
+    width: 90vw;
+    height: calc(90vw * 9 / 16)
   }
 }

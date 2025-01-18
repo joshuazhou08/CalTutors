@@ -92,36 +92,18 @@
   
   #subjects > li {
     background-color: white;
+    font-size: 18px;
   }
   
-  
+  #video-testimonials {
+    text-decoration: underline;
+  }
 
-  
-  /* video stuff */
+  #video-testimonials:hover {
+    color: var(--lightblue)
+  }
 
-  #moneyback{
-    margin-top: 75px;
-    color: white;
-    max-width: 1920px;
-    width: min(1920px, 100vw);
-    min-height: 300px;
-    pointer-events: none;
-    padding-left: 12vw;
-  }
-  
-  #moneyback > h1{
-    font-size: 42px;
-    letter-spacing: 1px;
-    font-family: Founders, sans-serif;
-    margin: 2px 0;
-    padding: 0 10px;
-  }
-  
-  .highlighted {
-    font-weight: 600;
-    background-color: rgb(15, 114, 207);
-    color: black;
-  }
+
   /*For Booking Free Schedule */
   
   #bookFree {
